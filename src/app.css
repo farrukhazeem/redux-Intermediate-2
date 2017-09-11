@@ -1,0 +1,38 @@
+.App{
+    background: blueviolet;
+    
+   
+}
+
+.App-header{
+    height:150px;
+}
+   
+.cars_comp {
+    background: white;
+}
+
+.main_search {
+
+    color: blueviolet;
+    text-align: center;
+    padding: 8px;
+}
+
+.main_search input {
+    
+    color: #C9CC19;
+    background: white;
+    border: 2px solid;
+    border-radius: 45px;
+    padding:10px 20px;
+    width: 400px;
+}
+
+.main_search input:focus{
+    outline: none;
+}
+h2 {
+    margin: 0px;
+    text-align: center;
+}
