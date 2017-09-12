@@ -36,3 +36,38 @@ h2 {
     margin: 0px;
     text-align: center;
 }
+
+.car_item {
+    display: flex;
+    border:1px solid lightblue;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.car_item .left {
+    width: 100px;
+}
+.car_item .left img {
+    width: 100px;
+}
+.car_item .right {
+    flex-grow: 1;
+}
+
+.car_item .right h4,
+.car_item .right h6 {
+    margin:0px;
+}
+
+.car_detail img {
+    width: 100%;
+}
+.car_detail h2,
+.car_detail h4 {
+    margin: 0px;
+}
+
+.car_detail .content {
+    padding:10px ;
+}

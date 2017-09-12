@@ -1,15 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 class ListofCars extends Component {
     
-    listofCars=({cars}) => {
-        if(cars){
-            return cars.map((car)=> {
+    listofCars=({list}) => {
+        if(list){
+            return list.map((car)=> {
                 return(
-                    <div className="car_item">
-                        {car.model}
-                    </div>
+                    <Link key={car.id} to={`/car/${car.id}`} className="car_item">
+                    
+                    <div className="left">
+                      <img src={`/images/${car.image}`}/>
+                       </div>
+                        <div className="right">
+                            <h4>{car.model}</h4>  
+                            <h6>{car.brand}</h6>
+
+                        </div>
+                      
+                 
+                    </Link>
+                    
                 )
             })
         }
@@ -19,7 +30,7 @@ class ListofCars extends Component {
     render() {
         return (
             <div className="cars_comp">
-                {this.listofCars(this.props)}
+                {this.listofCars(this.props.cars)}
             </div>
         )
     }
@@ -28,7 +39,7 @@ class ListofCars extends Component {
 function mapStateToProps(state) {
   console.log(state)
   return{
-      cars:state.cars
+      cars: state.cars
   }
 }
 

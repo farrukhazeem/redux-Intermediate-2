@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import promiseMiddleware from 'redux-promise';
 import reducers from './reducers/rootReducer';
 import App from './components/App';
-import Car from'./components/car';
+import Car from'./containers/car';
 import './app.css';
 import {BrowserRouter,
   Route
