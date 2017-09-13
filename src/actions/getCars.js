@@ -26,3 +26,9 @@ return {
 
 }
 
+export function clearDetail(){
+    return{
+        type:'CLEAR_DETAIL',
+        payload:[]
+    }
+}
